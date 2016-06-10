@@ -6,7 +6,7 @@ train = np.loadtxt(open("train.csv","rb"), delimiter=",", skiprows=0)
 trainLabels = np.loadtxt(open("trainLabels.csv","rb"), delimiter=",", skiprows=0)
 test = np.loadtxt(open("test.csv","rb"), delimiter=",", skiprows=0)
 
-
+#svm
 X, y = train, trainLabels
 s = svm.SVC()
 s.fit(X, y)
